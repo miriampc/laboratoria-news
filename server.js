@@ -1,5 +1,5 @@
-var express = require("express");
-var api = require("./api");
+const express = require("express");
+const api = require("./api");
 const app = express();
 
 app.get('/api/news/', function (req, res) {
@@ -40,7 +40,8 @@ app.get('/api/categories/:category_id', function (req, res) {
 
 app.use('/', express.static('public'));
 
+app.set('port', (process.env.PORT || 5000));
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Iniciando en puerto 3000");
+app.listen(app.get('port'), () => {
+    console.log('Node app is running on port', app.get('port'));
 });

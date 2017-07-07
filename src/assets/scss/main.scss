@@ -1,0 +1,46 @@
+@import "grid";
+@import "variables";
+
+.header {
+  @extend %container;
+  width: 100%;
+  &__menuDesk {
+    @extend %flex;
+    justify-content: flex-start;
+
+    margin-bottom: 14px;
+    ul li{
+      display: inline-block;
+    }
+  }
+  &__logo {
+    @extend %flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    height: 100px;
+  }
+  &__menu-mobile {
+    display: none;
+  }
+}
+
+//News
+.news {
+  @extend %container;
+  &__menu{
+    background-color: #F7B617;
+    padding: 10px 0;
+    ul {
+      @extend %flex;
+      justify-content: space-around;
+      li {color: #fff;}
+    }
+  }
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+}

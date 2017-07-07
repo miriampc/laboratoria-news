@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglify');
 const toEs6 = require('gulp-6to5');
 const concat = require('gulp-concat');
+const nodemon = require('gulp-nodemon');
 
 const config = {
     source:'./src/',
@@ -59,6 +60,33 @@ gulp.task('html-watch',["html"], (done) => {
     browserSync.reload();
     done();
 });
+gulp.task('nodemon',  (cb) =>{
+    let started = false;
+    return nodemon({
+        script: 'server.js'
+    }).on('start', function () {
+        if (!started) {
+            cb();
+            started = true;
+        }
+    });
+});
+gulp.task('browser-sync', ['nodemon'], () => {
+    browserSync.init(null, {
+        files: ["public/**/*.*"],
+        port: 5000,
+        proxy: {
+            target: 'localhost:3000/api',
+            ws: true
+        }
+    });
+});
+
+gulp.task('bs-watch', ['browser-sync'], (done) => {
+    browserSync.reload();
+    done();
+});
+
 gulp.task("serve", () => {
     browserSync.init({
         server:{baseDir:config.dist}
@@ -66,4 +94,5 @@ gulp.task("serve", () => {
     gulp.watch(sources.html,["html-watch"]);
     gulp.watch(sources.sass,["sass-watch"]);
     gulp.watch(sources.js,["js-watch"]);
+    gulp.watch(["./src/assets/*.html"],["bs-watch"]);
 });
