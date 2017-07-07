@@ -13,8 +13,7 @@ const state = {
 };
 
 $( _ => {
-    const getNews = (id) => {
-        $.get('/api/news/' + id, (data) => {
+        $.get('/api/news/', (data) => {
             if (!data) {
                 return alert("error");
             }
@@ -23,6 +22,4 @@ $( _ => {
             const root = $('#root');
             render(root);
         });
-    }
-
 });

@@ -22,21 +22,26 @@ const NewsLab = () => {
                        </div>`);
     newsContainer.append(divMenu);
     console.log(state.news);
-    getNews(1);
-    const divHome =$(`<div class="news__img1 col-sm-12">
-                              <img src="assets/img/news/${state.news.img} " alt="">
-                              <h1>${state.news.title}</h1>
-                              <h3>${state.news.brief}</h3>
-                          </div>`);
-    newsContainer.append(divHome);
 
-    getNews(2);
-    const divHome =$(`<div class="news__img2 col-sm-12">
-                              <img src="assets/img/news/${state.news.img} " alt="">
-                              <h1>${state.news.title}</h1>
-                              <h3>${state.news.brief}</h3>
+    const divHome =$(`<div class="news__img col-sm-12">
+                              <img src="assets/img/news/${state.news[0].img} " alt="">
+                              <h1>${state.news[0].title}</h1>
+                              <h3>${state.news[0].brief}</h3>
                           </div>`);
     newsContainer.append(divHome);
+    const rowImg = $(`<div class="row"></div>`);
+    const divHome1 = $(`<div class="news__img col-sm-6">
+                              <img src="assets/img/news/${state.news[1].img} " alt="">
+                              <h1>${state.news[1].title}</h1>
+                          </div>`);
+    rowImg.append(divHome1);
+
+    const divHome2 =$(`<div class="news__img col-sm-3">
+                              <img src="assets/img/news/${state.news[2].img} " alt="">
+                              <h1>${state.news[2].title}</h1>
+                          </div>`);
+    rowImg.append(divHome2);
+    newsContainer.append(rowImg);
 
     return newsContainer;
 }
