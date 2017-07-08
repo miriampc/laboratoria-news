@@ -10,7 +10,7 @@ const Footer = () => {
                        </div>`);
     footerContainer.append(part1);
 
-    const part2 = $(`<div class="footer__content col-sm-4">
+    const part2 = $(`<div class="footer__content col-sm-4 hidden-xs">
                         <ul>
                           <li>
                             <p>DIRECTOR GENERAL:</p>
@@ -37,7 +37,7 @@ const Footer = () => {
                        </div>`);
     footerContainer.append(part2);
 
-    const part3 = $(`<div class="footer__content col-sm-4">
+    const part3 = $(`<div class="footer__content col-sm-4 hidden-xs">
                             <p>TÉRMINOS Y CONDICIONES DE USO
                                 TRABAJA CON NOSOTROS
                                 LIBRO DE RECLAMACIONES
