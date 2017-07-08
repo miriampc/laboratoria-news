@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7e5ea7-80b5-41e7-b8dd-3e23cef75260" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/main.css" afterPath="$PROJECT_DIR$/public/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/bundle.js" afterPath="$PROJECT_DIR$/public/assets/js/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/js/components/header.js" afterPath="$PROJECT_DIR$/src/assets/js/components/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/js/components/lab-news.js" afterPath="$PROJECT_DIR$/src/assets/js/components/lab-news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/scss/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/scss/main.scss" afterPath="$PROJECT_DIR$/src/assets/scss/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -99,8 +95,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/assets/scss/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+                <state relative-caret-position="294">
+                  <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -422,12 +418,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499439523264</updated>
-      <workItem from="1499439524667" duration="41973000" />
+      <workItem from="1499439524667" duration="42283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41973000" />
+    <option name="totallyTimeSpent" value="42283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -650,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        <state relative-caret-position="294">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
