@@ -31,7 +31,7 @@ const NewsLab = () => {
                               <img src="assets/img/news/${state.news[0].img} " alt="">
                               <div class="col-sm-12">
                                   <h1>${state.news[0].title}</h1>
-                                  <h3>${state.news[0].brief}</h3>
+                                  <h3 class="hidden-xs">${state.news[0].brief}</h3>
                               </div>
                           </div>`);
     newsContainer.append(divHome);
