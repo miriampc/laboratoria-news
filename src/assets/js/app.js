@@ -22,4 +22,13 @@ $( _ => {
             const root = $('#root');
             render(root);
         });
+        const categories = () =>{
+            return $.get('/api/categories/', (data) => {
+                if (!data) {
+                    return alert("error");
+                }
+                state.categories = data;
+                console.log(state.categories);
+            });
+        }
 });
