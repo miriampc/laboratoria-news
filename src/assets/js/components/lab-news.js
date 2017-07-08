@@ -1,7 +1,7 @@
 function createElements(colContainer,colImg,colTitle,numImg) {
     const divImg = $(`<div class="news__img col-sm-${colContainer}">
-                              <div class="col-sm-${colImg}"><img src="assets/img/news/${state.news[numImg].img} " alt=""></div>                              
-                              <div class="col-sm-${colTitle}"><h4>${state.news[numImg].title}</h4></div>                              
+                              <div class="col-xs-${colImg}"><img src="assets/img/news/${state.news[numImg].img} " alt=""></div>                              
+                              <div class="news__title col-xs-${colTitle}"><h4>${state.news[numImg].title}</h4></div>                              
                       </div>`);
     return divImg;
 }
@@ -9,7 +9,7 @@ function createElements(colContainer,colImg,colTitle,numImg) {
 const NewsLab = () => {
     const newsContainer = $('<section class="news"></section>');
 
-    const divMenu = $(`<div class="news__menu col-sm-12">
+    const divMenu = $(`<div class="news__menu col-sm-12 hidden-xs">
                             <ul>
                                 <li>Lo último</li>
                                 <li>Opinión</li>
@@ -41,7 +41,7 @@ const NewsLab = () => {
 
     newsContainer.append(row1);
 
-    const world = $(`<h2 class="col-sm-12">Mundo</h2>`);
+    const world = $(`<div class="news__category col-xs-12"><h2>MUNDO</h2><hr></div>`);
     newsContainer.append(world);
 
     const row2 = $(`<div class="row col-sm-12"></div>`);
@@ -61,7 +61,7 @@ const NewsLab = () => {
     }
     newsContainer.append(row3);
 
-    const tech = $(`<h2 class="col-sm-12">TECNOLOGÍA</h2>`);
+    const tech = $(`<div class="news__category col-xs-12"><h2>TECNOLOGÍA</h2><hr></div>`);
     newsContainer.append(tech);
 
     const row4 = $(`<div class="row col-sm-12"></div>`);
@@ -76,7 +76,7 @@ const NewsLab = () => {
 
     newsContainer.append(row4);
 
-    const education = $(`<h2 class="col-sm-12">EDUCACIÓN</h2>`);
+    const education = $(`<div class="news__category col-xs-12"><h2>EDUCACIÓN</h2><hr></div>`);
     newsContainer.append(education);
 
     const row5 = $(`<div class="row col-sm-12"></div>`);
@@ -92,7 +92,7 @@ const NewsLab = () => {
     row5.append(row5Item2);
     newsContainer.append(row5);
 
-    const opinion= $(`<h2 class="col-sm-12">OPINIÓN</h2>`);
+    const opinion= $(`<div class="news__category col-xs-12"><h2>OPINIÓN</h2><hr></div>`);
     newsContainer.append(opinion);
 
 
