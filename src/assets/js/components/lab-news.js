@@ -24,7 +24,10 @@ const NewsLab = () => {
                        </div>`);
     newsContainer.append(divMenu);
 
-    const divHome = $(`<div class="news__img col-sm-12">
+    const loultimo = $(`<div class="news__category col-xs-12 show-xs hidden-md"><h2>LO ULTIMO</h2><hr></div>`);
+    newsContainer.append(loultimo);
+
+    const divHome = $(`<div class="news__main col-sm-12">
                               <img src="assets/img/news/${state.news[0].img} " alt="">
                               <div class="col-sm-12">
                                   <h1>${state.news[0].title}</h1>

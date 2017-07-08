@@ -24,7 +24,6 @@ const Header = () => {
     const menuMob= $(`<div class="header__menu-mobile show-xs">
                         <div class="logo col-xs-7"><img src="assets/img/logoicon.png" alt=""></div>
                         <div class="search col-xs-1"><img src="assets/img/menu.png" alt=""></div>
-                        <hr>
                       </div>`);
     headerContainer.append(nav);
     headerContainer.append(menuMob);
